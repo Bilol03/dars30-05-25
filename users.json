@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "firstName": "Kimdur",
+        "lastName": "Kimboyev",
+        "phone": 998999998999,
+        "age": 20
+    },
+    {
+        "firstName": "Sanjar",
+        "lastName": "Ermatov",
+        "phone": 99899988989,
+        "age": 25,
+        "id": 2
+    },
+    {
+        "firstName": "Sanjar",
+        "lastName": "Ermatov",
+        "phone": 99899988989,
+        "age": 25,
+        "id": 3
+    }
+]
