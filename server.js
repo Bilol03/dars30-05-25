@@ -49,6 +49,33 @@ app.get('/users/:id', (req, res)=> {
 	})
 })
 
+
+app.put('/users/:id', (req,res) => {
+	let users = readFile('./users.json')
+	const body = req.body
+	let user = users.find(el => el.id == req.params.id)
+	console.log(user, body)
+	user.firstName = body.firstName ? body.firstName : user.firstName
+	user.lastName = body.lastName ? body.lastName : user.lastName
+	user.phone = body.phone ? body.phone : user.phone
+	user.age = body.age ? body.age : user.age
+	writeFile('./users.json', users)
+
+	res.json({
+		message: "Success",
+		user
+	})
+})
+
+app.delete('/users/:id', (req,res) => {
+	let users = readFile('./users.json')
+	let data = users.filter(el => el.id != req.params.id)
+	writeFile('./users.json', data)
+	res.json({
+		message: "Success",
+		data
+	})
+})
 app.listen(8080, () =>
 	console.log('Server is working on http://localhost:8080'),
 )
