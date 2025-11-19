@@ -19,5 +19,12 @@
         "phone": 99899988989,
         "age": 25,
         "id": 3
+    },
+    {
+        "firstName": "Sanjar",
+        "lastName": "Ermatov",
+        "phone": 99899900900,
+        "age": 25,
+        "id": 4
     }
 ]
